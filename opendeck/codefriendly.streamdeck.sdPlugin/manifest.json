@@ -1,0 +1,91 @@
+{
+  "Name": "Omarchy Workspaces",
+  "Description": "Monitor-local Hyprland workspace buttons with focus and occupancy indicators.",
+  "Author": "codefriendly",
+  "Version": "0.9.0",
+  "Icon": "icon.svg",
+  "Category": "Omarchy",
+  "CategoryIcon": "icon.svg",
+  "OS": [
+    {
+      "Platform": "linux"
+    }
+  ],
+  "CodePathLin": "plugin.mjs",
+  "Actions": [
+    {
+      "Name": "Workspace",
+      "UUID": "codefriendly.streamdeck.workspace",
+      "Icon": "icon.svg",
+      "Tooltip": "Focus a local workspace on a chosen monitor",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": false,
+      "DisableAutomaticStates": true,
+      "PropertyInspectorPath": "inspector.html",
+      "States": [
+        {
+          "Name": "Inactive, empty",
+          "Image": "blank.svg",
+          "Title": "?",
+          "ShowTitle": true,
+          "BackgroundColour": "#101418",
+          "TitleColor": "#69737c",
+          "FontSize": 26,
+          "TitleAlignment": "middle"
+        },
+        {
+          "Name": "Inactive, occupied",
+          "Image": "blank.svg",
+          "Title": "?",
+          "ShowTitle": true,
+          "BackgroundColour": "#101418",
+          "TitleColor": "#ffffff",
+          "FontSize": 26,
+          "TitleAlignment": "middle"
+        },
+        {
+          "Name": "Visible, empty",
+          "Image": "blank.svg",
+          "Title": "?",
+          "ShowTitle": true,
+          "BackgroundColour": "#264653",
+          "TitleColor": "#8aa0a9",
+          "FontSize": 26,
+          "TitleAlignment": "middle"
+        },
+        {
+          "Name": "Visible, occupied",
+          "Image": "blank.svg",
+          "Title": "?",
+          "ShowTitle": true,
+          "BackgroundColour": "#264653",
+          "TitleColor": "#ffffff",
+          "FontSize": 26,
+          "TitleAlignment": "middle"
+        },
+        {
+          "Name": "Focused, empty",
+          "Image": "blank.svg",
+          "Title": "?",
+          "ShowTitle": true,
+          "BackgroundColour": "#237b68",
+          "TitleColor": "#a1c3bb",
+          "FontSize": 26,
+          "TitleAlignment": "middle"
+        },
+        {
+          "Name": "Focused, occupied",
+          "Image": "blank.svg",
+          "Title": "?",
+          "ShowTitle": true,
+          "BackgroundColour": "#237b68",
+          "TitleColor": "#ffffff",
+          "FontSize": 26,
+          "TitleAlignment": "middle"
+        }
+      ]
+    }
+  ]
+}

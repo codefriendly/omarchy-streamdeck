@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Workspace target</title>
+  <link rel="stylesheet" href="inspector.css">
+  <script src="inspector.js" defer></script>
+</head>
+<body>
+  <main>
+    <h2>Workspace target</h2>
+    <form id="target">
+      <label for="monitor">Monitor connector</label>
+      <input id="monitor" name="monitor" required maxlength="64" autocomplete="off" spellcheck="false" placeholder="HDMI-A-1" aria-describedby="monitor-hint" disabled>
+      <p id="monitor-hint">Use the connector name shown by <code>hyprctl monitors</code>.</p>
+      <label for="workspace">Workspace</label>
+      <input id="workspace" name="workspace" type="number" min="1" max="10" step="1" value="1" required aria-describedby="workspace-hint" disabled>
+      <p id="workspace-hint">Local slot 1–10 on this monitor, not its global workspace ID.</p>
+      <button id="save" type="submit" disabled>Save target</button>
+      <p id="status" role="status" aria-live="polite">Connecting to OpenDeck…</p>
+    </form>
+    <p class="appearance">For colors and typography, right-click the button, choose Edit, then select a state.</p>
+  </main>
+</body>
+</html>

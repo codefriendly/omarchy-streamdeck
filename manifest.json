@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "codefriendly.streamdeck",
+  "name": "OpenDeck Workspaces",
+  "version": "0.9.0",
+  "author": "codefriendly",
+  "description": "Send Hyprland workspace visibility and occupancy to the OpenDeck workspace action.",
+  "kinds": ["service"],
+  "entryPoints": { "service": "Service.qml" }
+}

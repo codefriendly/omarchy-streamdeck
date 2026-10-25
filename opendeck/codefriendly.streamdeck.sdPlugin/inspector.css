@@ -1,0 +1,17 @@
+:root { color-scheme: dark; font: 13px/1.5 system-ui, sans-serif; color: #f5f5f5; background: #262626; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 36rem; padding: 12px; }
+h2 { font-size: 14px; font-weight: 600; margin: 0 0 16px; }
+label { display: block; margin: 14px 0 5px; }
+input { display: block; width: 100%; min-width: 0; padding: 8px; border: 1px solid #6a6a6a; border-radius: 4px; background: #333; color: #f5f5f5; font: inherit; caret-color: #68d5b5; }
+input::placeholder { color: #c4c4c4; }
+p { margin: 5px 0 0; color: #c4c4c4; overflow-wrap: anywhere; }
+code { font-size: 12px; }
+button { margin-top: 16px; padding: 8px 12px; border: 0; border-radius: 4px; background: #68d5b5; color: #101418; font: inherit; font-weight: 600; cursor: pointer; }
+button:hover:not(:disabled) { background: #92e2ca; }
+button:disabled, input:disabled { opacity: .65; cursor: default; }
+:focus-visible { outline: 2px solid #68d5b5; outline-offset: 3px; }
+::selection { color: #101418; background: #68d5b5; }
+#error, #status[data-error="true"] { color: #f7b8af; }
+.appearance { margin-top: 20px; }
